@@ -61,4 +61,110 @@
     }
 
     p.lead{
+      margin: 0 0 12px 0;
+      color: #222;
+    }
 
+    .photo{
+      width: 100%;
+      max-width: 420px;
+      height: 220px;
+      background: #e9e9ee;
+      border-radius: 8px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color: var(--muted);
+      margin: 12px 0;
+      font-size: 0.95rem;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media(min-width:720px){
+      .two-col{
+        grid-template-columns: 1fr 1fr;
+        align-items:start;
+      }
+      .photo{
+        height: 200px;
+      }
+    }
+
+    footer{
+      text-align:center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-top: 18px;
+    }
+
+    a.small{
+      color: var(--accent);
+      text-decoration: none;
+      font-weight:600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Avin</h1>
+  </header>
+
+  <main>
+    <section class="card" id="plans">
+      <h2>What I want to do after high school</h2>
+      <p class="lead">After high school, I want to study medicine and work toward becoming a doctor. I’m excited to help people, learn more about the human body, and make a difference in my community.</p>
+    </section>
+
+    <section class="card" id="unit1">
+      <h2>Unit 1</h2>
+      <div class="two-col">
+        <div>
+          <div class="photo" role="img" aria-label="Profile photo placeholder for Unit 1">Photo placeholder (Unit 1)</div>
+        </div>
+        <div>
+          <p>Unit 1 vocabulary and notes will go here. Paste your Unit 1 Google Doc text or vocabulary list into this area when you're ready.</p>
+          <ul>
+            <li>Vocab 1</li>
+            <li>Vocab 2</li>
+            <li>Vocab 3</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="unit2">
+      <h2>Unit 2</h2>
+      <div class="two-col">
+        <div>
+          <div class="photo" role="img" aria-label="Profile photo placeholder for Unit 2">Photo placeholder (Unit 2)</div>
+        </div>
+        <div>
+          <p>Unit 2 vocabulary and notes will go here. Paste your Unit 2 Google Doc text or vocabulary list into this area when you're ready.</p>
+          <ul>
+            <li>Vocab A</li>
+            <li>Vocab B</li>
+            <li>Vocab C</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="darkweb">
+      <h2>Dark Web (informational)</h2>
+      <p>
+        The Dark Web is a part of the Web that requires specific configurations and software to access, which allows users and servers to stay anonymous and hide their locations. It is used for legal activities, like conversations between political leaders or whistleblowers who don't want their conversations saved. It is also used for illegal activities such as the selling of substances, weapons, and malware. Although it is not illegal to visit the Dark Web, there are many illegal activities that take place there. Another common myth is that the Dark Web keeps you completely anonymous — that's not true; it simply makes tracking harder, not impossible.
+      </p>
+    </section>
+
+    <footer>
+      <div>Made by Avin • <span style="opacity:.9">Single-page student site</span></div>
+      <div style="margin-top:6px"><a class="small" href="#plans">Jump to top</a></div>
+    </footer>
+  </main>
+</body>
+</html>
