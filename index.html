@@ -95,6 +95,17 @@
       }
     }
 
+    .video-thumbnail {
+      margin-top: 12px;
+      text-align: center;
+    }
+    .video-thumbnail img {
+      width: 100%;
+      max-width: 560px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
     footer{
       text-align:center;
       color: var(--muted);
@@ -117,21 +128,25 @@
   <main>
     <section class="card" id="plans">
       <h2>What I want to do after high school</h2>
-      <p class="lead">After high school, I want to study medicine and work toward becoming a doctor. I’m excited to help people, learn more about the human body, and make a difference in my community.</p>
+      <p class="lead">After high school, I want to study medicine and work towards becoming a doctor. I’m excited to help people, learn more about the human body, and make a difference in my community.</p>
     </section>
 
     <section class="card" id="unit1">
       <h2>Unit 1</h2>
       <div class="two-col">
         <div>
-          <div class="photo" role="img" aria-label="Profile photo placeholder for Unit 1">Photo placeholder (Unit 1)</div>
+          <img src="https://sewelldirect.com/cdn/shop/articles/understanding-bits-and-bytes-611022_800x800.jpg?v=1565650972" alt="Bits and Bytes" class="photo">
         </div>
         <div>
-          <p>Unit 1 vocabulary and notes will go here. Paste your Unit 1 Google Doc text or vocabulary list into this area when you're ready.</p>
+          <h3>Vocabulary – Data</h3>
           <ul>
-            <li>Vocab 1</li>
-            <li>Vocab 2</li>
-            <li>Vocab 3</li>
+            <li><strong>bit</strong>: A binary digit, either 0 or 1. Learn more in Binary numbers.</li>
+            <li><strong>byte</strong>: A sequence of 8 bits. Learn more in Bytes.</li>
+            <li><strong>roundoff</strong>: Error that results when the number of bits is not enough to represent the number with full precision (like using 3 digits to represent π as 3.14). Learn more in Number limits, overflow, and roundoff.</li>
+            <li><strong>analog data</strong>: Values that change smoothly, rather than in discrete intervals, over time. For example, the pitch and volume of a live concert. Learn more in From analog to digital data.</li>
+            <li><strong>lossless</strong>: Compressing data in a way that preserves all data and allows full recovery of the original. Learn more in Data compression.</li>
+            <li><strong>lossy</strong>: Compressing data in a way that discards some data and makes it impossible to recover the original. Learn more in Data compression.</li>
+            <li><strong>metadata</strong>: Data about data, like descriptive information about a file or a row in a database.</li>
           </ul>
         </div>
       </div>
@@ -141,14 +156,44 @@
       <h2>Unit 2</h2>
       <div class="two-col">
         <div>
-          <div class="photo" role="img" aria-label="Profile photo placeholder for Unit 2">Photo placeholder (Unit 2)</div>
+          <img src="https://www.cisco.com/c/dam/en/us/td/i/300001-400000/380001-390000/387001-388000/387890.jpg" alt="Network routers, redundancy" class="photo">
         </div>
         <div>
-          <p>Unit 2 vocabulary and notes will go here. Paste your Unit 2 Google Doc text or vocabulary list into this area when you're ready.</p>
+          <h3>Vocabulary – Computer Systems and Networks</h3>
           <ul>
-            <li>Vocab A</li>
-            <li>Vocab B</li>
-            <li>Vocab C</li>
+            <li><strong>Computing Device</strong>: A physical device that can run a program (e.g., computer, smartphone, smart sensor).</li>
+            <li><strong>Computer Network</strong>: A group of interconnected computing devices capable of sending or receiving data.</li>
+            <li><strong>Path</strong>: The series of connections between computing devices on a network, starting with the sender and ending with the receiver.</li>
+            <li><strong>Protocol</strong>: An agreed-upon set of rules that specify how systems behave and communicate.</li>
+            <li><strong>Fault Tolerant</strong>: A system’s ability to continue functioning even if individual components fail.</li>
+            <li><strong>Scalability</strong>: The ability of a system to expand or contract to meet new demands.</li>
+            <li><strong>Bandwidth</strong>: The maximum transmission capacity of a system, measured by bit rate (bits per second).</li>
+            <li><strong>URL (Uniform Resource Locator)</strong>: An easy-to-remember web address (e.g., www.example.com).</li>
+          </ul>
+          <h4>Internet Structure and Layers</h4>
+          <ul>
+            <li><strong>Physical Network</strong>: The hardware and physical connections that carry internet signals.</li>
+            <li><strong>Internet Protocol (IP)</strong>: Assigns unique IP addresses to devices and determines how data is routed between them.</li>
+            <li><strong>Transmission Control Protocol (TCP)</strong>: Ensures reliable, ordered, and error-checked delivery of data packets.</li>
+            <li><strong>User Datagram Protocol (UDP)</strong>: A lightweight alternative to TCP with minimal error-checking (faster but less reliable).</li>
+            <li><strong>Packets</strong>: Small chunks of data into which larger messages are divided for transmission. Packets may arrive in order, out-of-order, or not at all.</li>
+            <li><strong>Routers</strong>: Specialized computers that forward data across networks, choosing the fastest available path.</li>
+            <li><strong>Domain Name System (DNS)</strong>: Translates human-readable domain names (like example.com) into IP addresses.</li>
+            <li><strong>Hypertext Transfer Protocol (HTTP)</strong>: Used for transmitting and requesting web pages and media on the World Wide Web.</li>
+            <li><strong>World Wide Web (WWW)</strong>: A system of linked pages, media, and files browsable over HTTP.</li>
+          </ul>
+          <h4>Key Concepts</h4>
+          <ul>
+            <li><strong>Message Delivery on the Internet</strong>: Messages are split into packets, which may take different paths through the network. The internet does not require a direct connection between sender and receiver.</li>
+            <li><strong>Redundancy</strong>: Multiple pathways exist in the network so if one route fails, packets can take another.</li>
+            <li><strong>Fault Tolerance</strong>: Because of redundancy, the internet can continue working even if parts of it are damaged.</li>
+            <li><strong>Scalability</strong>: The internet is designed to grow and support billions of devices without redesigning its core structure.</li>
+            <li><strong>IP Addressing and Encoding</strong>:  
+              <ul>
+                <li>IPv4 uses 32-bit addresses → 2³² = 4,294,967,296 unique addresses.</li>
+                <li>Adding 16 more bits (IPv6) increases the address space by 2¹⁶ = 65,536 times.</li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -159,6 +204,12 @@
       <p>
         The Dark Web is a part of the Web that requires specific configurations and software to access, which allows users and servers to stay anonymous and hide their locations. It is used for legal activities, like conversations between political leaders or whistleblowers who don't want their conversations saved. It is also used for illegal activities such as the selling of substances, weapons, and malware. Although it is not illegal to visit the Dark Web, there are many illegal activities that take place there. Another common myth is that the Dark Web keeps you completely anonymous — that's not true; it simply makes tracking harder, not impossible.
       </p>
+
+      <div class="video-thumbnail">
+        <a href="https://youtu.be/Sfzo4xm5eX8?si=_iqWsNUOAYgcMiX0" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/Sfzo4xm5eX8/hqdefault.jpg" alt="How the Internet Works video thumbnail">
+        </a>
+      </div>
     </section>
 
     <footer>
@@ -168,3 +219,4 @@
   </main>
 </body>
 </html>
+
